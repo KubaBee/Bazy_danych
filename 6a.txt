@@ -1,3 +1,4 @@
+# <- poprawione w trakcie zajęć, + dodane; - źle
 6.1.
 
 id_produktu -> nazwa_produktu, cena_produktu, VAT
@@ -5,14 +6,14 @@ nazwa_produktu -> VAT, cena_produktu, id_produktu
 suma_brutto -> suma_netto, VAT, ilosc, cena_produktu
 suma_netto -> ilosc, cena_produktu
 id_klienta -> data_zawiadomienia, nazwa_klienta, suma_brutto, suma_netto, VAT, ilosc, cena_produktu
-data_zamowienia -> nazwa_klienta, suma_brutto, suma_netto, VAT, ilosc, cena_produktu
+data_zamowienia -> nazwa_klienta, suma_brutto, suma_netto, VAT, ilosc, cena_produktu # -
 
 6.2.
-
-id_produktu,
+# + data_zamówienia + id klienta
+#- (id_produktu,
 nazwa_produktu, 
 id_klienta
-nazwa_klienta 
+nazwa_klienta)
 
 6.3.
 
@@ -21,7 +22,7 @@ miasto -> kod_pocztowy, ulica
 numer_pomieszczenia -> powierzchnia, liczba_okien, liczba_drzwi
 id_pomieszczenia -> id_budynku, numer_pomieszczenia, powierzchnia, liczba_okien, liczba_drzwi, miasto, kod_pocztowy, ulica
 
-
+zakłedając że id_budynku jest kluczem głównym
 id_budynku, 
 id_pomieszczenia, 
 numer_pomieszczenia+id_budynku, 
